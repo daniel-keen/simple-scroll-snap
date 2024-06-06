@@ -3,7 +3,9 @@
 
 ## Installation
 Install via UPM:
-```https://github.com/daniel-keen/simple-scroll-snap.git```  
+```
+https://github.com/daniel-keen/simple-scroll-snap.git
+```
 
 ## Forked Features:
 - Install via Unity Package Manager
