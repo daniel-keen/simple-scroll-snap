@@ -660,6 +660,25 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             }
         }
 
+        public void Add<T>(T item) where T: MonoBehaviour
+        {
+            item.gameObject.transform.SetParent(Content, false);
+            panel.transform.SetAsLastSibling();
+
+            if (ValidConfig)
+            {
+                if (CenteredPanel <= index)
+                {
+                    startingPanel = CenteredPanel;
+                }
+                else
+                {
+                    startingPanel = CenteredPanel + 1;
+                }
+                Setup();
+            }
+        }
+
         public void AddToFront(GameObject panel)
         {
             Add(panel, 0);
