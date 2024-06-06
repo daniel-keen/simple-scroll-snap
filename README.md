@@ -17,7 +17,7 @@ void Test(object someData)
 {
     var item = Instantiate(MyPrefab, scrollSnap.Content);
     item.Initialize(someData);  // You can do something with your object.
-    scrollSnap.AddToBack(item.gameObject);
+    **scrollSnap.Insert(item, 0);**
 }
 ```
 
