@@ -660,11 +660,11 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             }
         }
 
-        public void Add<T>(T item) where T: MonoBehaviour
+        public void Add<T>(T item, int index) where T: MonoBehaviour
         {
             var panel = item.gameObject.transform;
             panel.SetParent(Content, false);
-            panel.transform.SetAsLastSibling();
+            panel.transform.SetSiblingIndex(index);
 
             if (ValidConfig)
             {
