@@ -660,7 +660,13 @@ namespace DanielLochner.Assets.SimpleScrollSnap
             }
         }
 
-        public void Add<T>(T item, int index) where T: MonoBehaviour
+        /// <summary>
+        /// This will not instantiate passed item under the hood.
+        /// </summary>
+        /// <param name="item">Panel item</param>
+        /// <param name="index">Insertion index</param>
+        /// <typeparam name="T">MonoBehaviour object</typeparam>
+        public void Insert<T>(T item, int index) where T: MonoBehaviour
         {
             var panel = item.gameObject.transform;
             panel.SetParent(Content, false);
