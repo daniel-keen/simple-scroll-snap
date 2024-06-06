@@ -17,7 +17,7 @@ void Test(object someData)
 {
     var item = Instantiate(MyPrefab, scrollSnap.Content);
     item.Initialize(someData);  // You can do something with your object.
-    **scrollSnap.Insert(item, 0);**
+    scrollSnap.Insert(item, 0);    // This is how you can insert existing items without instantiating them under the hood.
 }
 ```
 
