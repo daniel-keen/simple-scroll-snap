@@ -1,0 +1,11 @@
+{
+    "name": "com.yellduck.simple-scroll-snap",
+    "displayName": "Simple Scroll Snap",
+    "author": { "name": "Daniel Keen", "url": "http://danielkeen.xyz" },
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "description": "Provides an efficient scroll snap solution to Unity.",
+    "keywords": [ "scroll", "snap", "scroll-snap", "scrollrect" ],
+    "license": "MIT",
+    "dependencies": {}
+}
