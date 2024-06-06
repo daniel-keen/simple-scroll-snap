@@ -662,7 +662,8 @@ namespace DanielLochner.Assets.SimpleScrollSnap
 
         public void Add<T>(T item) where T: MonoBehaviour
         {
-            item.gameObject.transform.SetParent(Content, false);
+            var panel = item.gameObject.transform;
+            panel.SetParent(Content, false);
             panel.transform.SetAsLastSibling();
 
             if (ValidConfig)
