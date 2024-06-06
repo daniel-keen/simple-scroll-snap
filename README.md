@@ -1,8 +1,12 @@
-<h1 align="middle">Simple Scroll-Snap (Fork)</h1>
+<h1 align="middle">Simple Scroll-Snap (Fork) by Daniel Keen</h1>
 <p align="middle">This is a fork of the original Simple Scroll-Snap library made by <a href="https://github.com/daniellochner/simple-scroll-snap/commits?author=daniellochner">Daniel Lochner</a>.</p>
 
+## Installation
+Install via UPM:
+`https://github.com/daniel-keen/simple-scroll-snap.git`  
+
 ## Forked Features:
-- Install via Unity Package Manager. `https://github.com/daniel-keen/simple-scroll-snap.git`
+- Install via Unity Package Manager
 - Add items without instantiating them under the hood, like so:
 ```
 private MyPrefabComponent MyPrefab;
