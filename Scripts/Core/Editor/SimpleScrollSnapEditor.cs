@@ -62,7 +62,6 @@ namespace DanielLochner.Assets.SimpleScrollSnap
         {
             serializedObject.Update();
 
-            ShowCopyrightNotice();
             ShowMovementAndLayoutSettings();
             ShowNavigationSettings();
             ShowSnapSettings();
